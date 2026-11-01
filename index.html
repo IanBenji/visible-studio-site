@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!-- ★ Replace "Visible Studio" with your studio name (also in js/data.js → SITE.name) -->
+  <title>Visible Studio — Creative Video Production, Editing &amp; Motion Design</title>
+  <meta name="description" content="Creative direction, cinematic video production, editing and motion design for brands, businesses and creators. Explore our showroom of explainer videos, travel edits, podcast edits, talking-head videos and motion graphics ads." />
+  <meta name="theme-color" content="#101014" />
+  <meta name="color-scheme" content="dark" />
+  <!-- ★ Replace with your live domain -->
+  <link rel="canonical" href="https://www.yourstudio.com/" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Visible Studio" />
+  <meta property="og:title" content="Visible Studio — We turn ideas into visual experiences" />
+  <meta property="og:description" content="Creative direction, cinematic video production, editing and motion design for brands, businesses and creators." />
+  <meta property="og:url" content="https://www.yourstudio.com/" />
+  <meta property="og:image" content="https://www.yourstudio.com/assets/images/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Visible Studio — We turn ideas into visual experiences" />
+  <meta name="twitter:description" content="Creative direction, cinematic video production, editing and motion design." />
+  <meta name="twitter:image" content="https://www.yourstudio.com/assets/images/og-image.webp" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preload" href="assets/fonts/BricolageGrotesque-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/InstrumentSans-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="vendor/lenis/lenis.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/work.css" />
+  <link rel="stylesheet" href="css/project.css" />
+
+  <script>
+    // Flag set before first paint: JS available.
+    document.documentElement.classList.replace('no-js', 'js');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Visible Studio",
+    "url": "https://www.yourstudio.com/",
+    "logo": "https://www.yourstudio.com/assets/logos/logo.svg",
+    "email": "benjaminsian132@gmail.com",
+    "description": "Creative direction, cinematic video production, editing and motion design for brands, businesses and creators.",
+    "makesOffer": [
+      "Video Editing", "Commercial & Promotional Videos", "Documentary & Explainer Videos",
+      "Personal Brand Videos", "Podcast & Interview Editing", "Motion Graphics & Animation",
+      "Social Media Content", "Corporate Video Production", "Creative Direction & Storytelling"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Film grain texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="header" data-header>
+    <div class="timeline-bar" aria-hidden="true">
+      <div class="timeline-bar__ticks"></div>
+      <div class="timeline-bar__fill"></div>
+      <div class="timeline-bar__head"></div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="Visible Studio — back to top">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        <span class="nav__logo-word" data-site-short>VISIBLE</span>
+        <span class="nav__logo-sub">studio</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#top" data-nav="top">Showreel</a></li>
+        <li><a href="#work" data-nav="work">Work</a></li>
+        <li><a href="#reels" data-nav="reels">Reels</a></li>
+        <li><a href="#services" data-nav="services">Services</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav__right">
+        <span class="nav__tc" aria-hidden="true"><i class="rec-dot"></i><span data-timecode>00:00:00:00</span></span>
+        <a class="btn btn--orange btn--sm" href="#contact" data-magnetic>
+          <span class="btn__label">Start a Project</span><span class="btn__icon"><i data-icon="arrow-up-right" data-size="16"></i></span>
+        </a>
+        <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="mmenu__bg"></div>
+    <div class="mmenu__inner">
+      <ol class="mmenu__links">
+        <li><a href="#top"><span class="mmenu__num">01</span>Showreel</a></li>
+        <li><a href="#work"><span class="mmenu__num">02</span>Work</a></li>
+        <li><a href="#reels"><span class="mmenu__num">03</span>Reels</a></li>
+        <li><a href="#services"><span class="mmenu__num">04</span>Services</a></li>
+        <li><a href="#contact"><span class="mmenu__num">05</span>Contact</a></li>
+      </ol>
+      <div class="mmenu__foot">
+        <a class="btn btn--ink" href="#contact"><span class="btn__label">Start a Project</span><span class="btn__icon"><i data-icon="arrow-up-right" data-size="16"></i></span></a>
+        <div class="mmenu__contact" data-contact-links></div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__atmos" aria-hidden="true">
+        <span class="blob blob--violet" data-depth="0.6"></span>
+        <span class="blob blob--orange" data-depth="0.9"></span>
+        <span class="blob blob--cobalt" data-depth="0.4"></span>
+      </div>
+
+      <div class="hero__head wrap">
+        <div class="hero__intro">
+          <p class="label">Video production studio</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line"><span class="hero__line-inner">We turn ideas into</span></span>
+            <span class="hero__line"><span class="hero__line-inner"><em class="serif-em gradient-text">visual</em> experiences.</span></span>
+          </h1>
+        </div>
+        <div class="hero__side">
+          <p class="hero__lede">Creative direction, cinematic video production, editing and motion design for brands, businesses and creators.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--paper" href="#work" data-magnetic>
+              <span class="btn__label">See all our videos</span><span class="btn__icon"><i data-icon="arrow-down" data-size="16"></i></span>
+            </a>
+            <a class="btn btn--ghost" href="#contact" data-magnetic>
+              <span class="btn__label">Start a Project</span><span class="btn__icon"><i data-icon="arrow-up-right" data-size="16"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showreel inside an editing-app window: program monitor + a timeline of real projects.
+           Player: js/modules/hero.js (SITE.showreel) · timeline: js/modules/timeline.js (PROJECTS) -->
+      <div class="hero__reel wrap">
+        <div class="editor">
+          <div class="editor__bar">
+            <span class="editor__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="editor__file" data-editor-file>SHOWREEL.edit</span>
+            <span class="editor__tools" aria-hidden="true">
+              <i data-icon="layers" data-size="15"></i><i data-icon="scissors" data-size="15"></i><i data-icon="wand-sparkles" data-size="15"></i>
+            </span>
+            <span class="editor__note" data-reel-note></span>
+            <span class="editor__tc" aria-hidden="true" data-tl-tc>00:00:00:00</span>
+          </div>
+          <div class="editor__monitor">
+            <div class="editor__panel editor__bin" data-bin aria-hidden="true"></div>
+            <div class="showreel" data-showreel>
+              <div class="showreel__player" data-reel-player></div>
+              <span class="showreel__marks" aria-hidden="true"></span>
+            </div>
+            <div class="editor__panel editor__inspector" data-inspector aria-hidden="true"></div>
+          </div>
+          <div class="tl" data-timeline></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WORK ============================== -->
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="label label--clip"><b>01</b>Work<span aria-hidden="true">00:00:30:00</span></p>
+            <h2 class="section-title" id="work-title" data-anim="lines">Watch our <em class="serif-em">work</em></h2>
+          </div>
+          <p class="section-intro" data-anim="fade">Press play on any video to watch it with sound. Most come in both a wide YouTube version and a vertical Reel.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter videos by category" data-filters></div>
+        <p class="sr-only" aria-live="polite" data-filter-status></p>
+
+        <div class="work-grid" data-work-grid></div>
+        <noscript><p class="section-intro">Enable JavaScript to browse the portfolio.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============================== REELS ============================== -->
+    <section class="reels section" id="reels" aria-labelledby="reels-title">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="label label--clip"><b>02</b>Reels &amp; Shorts<span aria-hidden="true">00:01:00:00</span></p>
+            <h2 class="section-title" id="reels-title" data-anim="lines">Made for <em class="serif-em">vertical</em></h2>
+          </div>
+          <div class="reels__intro">
+            <p class="section-intro" data-anim="fade">Our vertical cuts, made for Instagram Reels, TikTok and YouTube Shorts.</p>
+            <div class="reels__nav">
+              <button class="reels__arrow" type="button" data-reels-prev aria-label="Previous videos"><i data-icon="arrow-left" data-size="20"></i></button>
+              <button class="reels__arrow" type="button" data-reels-next aria-label="More videos"><i data-icon="arrow-right" data-size="20"></i></button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="reels__track" data-reels role="list" aria-label="Vertical videos"></div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="label label--clip"><b>03</b>Services<span aria-hidden="true">00:01:30:00</span></p>
+            <h2 class="section-title" id="services-title" data-anim="lines">What we <em class="serif-em">make</em></h2>
+          </div>
+          <p class="section-intro" data-anim="fade">From a single edit to a full campaign — strategy, story, footage, motion and delivery, shaped around what you need to say.</p>
+        </header>
+        <ul class="svc-grid" data-services></ul>
+      </div>
+    </section>
+
+    <!-- ============================== PROCESS ============================== -->
+    <section class="process section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="label label--clip"><b>04</b>Process<span aria-hidden="true">00:02:00:00</span></p>
+            <h2 class="section-title" id="process-title" data-anim="lines">From idea to <em class="serif-em">final cut</em></h2>
+          </div>
+          <p class="section-intro" data-anim="fade">Four clear stages, so you always know what happens next.</p>
+        </header>
+        <ol class="steps" data-process></ol>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="label label--clip"><b>05</b>About the studio<span aria-hidden="true">00:02:30:00</span></p>
+        <h2 class="sr-only" id="about-title">About the studio</h2>
+        <!-- ★ Editable placeholder copy — rewrite in your own voice. -->
+        <p class="about__manifesto" data-anim="words">
+          We are a creative studio for ideas that deserve to be <em class="serif-em">seen.</em>
+          We shape stories, craft edits and design motion that helps brands, businesses and creators
+          communicate with <em class="serif-em">clarity</em> — and leave people wanting to watch again.
+        </p>
+
+        <div class="about__grid">
+          <figure class="about__photo" data-anim="clip">
+            <img class="about__img" src="assets/images/about/benji.jpeg" width="720" height="1080" alt="A member of the studio smiling at an outdoor event" loading="lazy" decoding="async">
+            <figcaption class="label">● REC — Behind the scenes</figcaption>
+          </figure>
+
+          <div class="about__values">
+            <h3 class="about__values-title" data-anim="lines">What we care about</h3>
+            <ul class="values" data-anim="stagger">
+              <li><span class="values__num">01</span><h4>Creative storytelling</h4><p>Every frame serves the story. Structure first, spectacle second.</p></li>
+              <li><span class="values__num">02</span><h4>Visual communication</h4><p>Complex ideas made clear through design, motion and pacing.</p></li>
+              <li><span class="values__num">03</span><h4>Quality editing</h4><p>Rhythm, timing and sound design that make content feel effortless.</p></li>
+              <li><span class="values__num">04</span><h4>Modern techniques</h4><p>Current tools, formats and platforms — vertical, wide and everything in between.</p></li>
+              <li><span class="values__num">05</span><h4>Attention to detail</h4><p>Colour, captions, transitions and finishing that hold up to a second look.</p></li>
+              <li><span class="values__num">06</span><h4>Your idea, visible</h4><p>We help you communicate what matters — to the people who need to see it.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="label label--clip"><b>06</b>Start a project<span aria-hidden="true">00:03:00:00</span></p>
+        <h2 class="contact__title" id="contact-title" data-anim="lines">Have an idea?<br />Let's make it <em class="serif-em gradient-text">visible.</em></h2>
+        <p class="section-intro" data-anim="fade">Tell us what you're planning. Let's create something worth watching.</p>
+
+        <div class="contact__grid">
+          <form class="form" novalidate data-contact-form>
+            <div class="field">
+              <input class="field__input" id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required aria-describedby="f-name-err" />
+              <label class="field__label" for="f-name">Your name</label>
+              <p class="field__error" id="f-name-err"></p>
+            </div>
+            <div class="field">
+              <input class="field__input" id="f-email" name="email" type="email" autocomplete="email" placeholder=" " required aria-describedby="f-email-err" />
+              <label class="field__label" for="f-email">Email address</label>
+              <p class="field__error" id="f-email-err"></p>
+            </div>
+            <fieldset class="field field--chips" aria-describedby="f-type-err">
+              <legend class="field__legend">Project type</legend>
+              <div class="chips" data-type-chips></div>
+              <p class="field__error" id="f-type-err"></p>
+            </fieldset>
+            <div class="field">
+              <textarea class="field__input field__input--area" id="f-desc" name="description" rows="5" placeholder=" " required minlength="20" aria-describedby="f-desc-err"></textarea>
+              <label class="field__label" for="f-desc">Tell us about the project</label>
+              <p class="field__error" id="f-desc-err"></p>
+            </div>
+            <!-- Honeypot (spam trap) — keep hidden -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+            <div class="form__foot">
+              <button class="btn btn--orange btn--lg" type="submit" data-magnetic>
+                <span class="btn__label">Send project brief</span><span class="btn__icon"><i data-icon="send" data-size="18"></i></span>
+              </button>
+              <p class="form__note">We'll only use your details to reply to your enquiry.</p>
+            </div>
+            <div class="form__status" role="status" aria-live="polite" data-form-status></div>
+          </form>
+
+          <aside class="contact__side" aria-label="Direct contact">
+            <div class="contact__card">
+              <p class="label">Prefer to talk directly?</p>
+              <a class="contact__big" data-email-link href="#"></a>
+              <a class="contact__wa" data-whatsapp-link href="#" target="_blank" rel="noopener">
+                <i data-icon="message-circle" data-size="20"></i>
+                <span><strong>WhatsApp</strong><span data-whatsapp-label></span></span>
+                <i data-icon="arrow-up-right" data-size="18"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <p class="label">Follow the work</p>
+              <ul class="socials" data-socials></ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer" aria-labelledby="footer-title">
+    <h2 class="sr-only" id="footer-title">Footer</h2>
+    <div class="wrap">
+      <div class="footer__top">
+        <a class="footer__cta" href="#contact">
+          <span class="label">Next scene</span>
+          <span class="footer__cta-text">Start a project <i data-icon="arrow-up-right" data-size="48"></i></span>
+        </a>
+        <button class="rewind" type="button" data-rewind data-magnetic aria-label="Back to top">
+          <i data-icon="rewind" data-size="22"></i>
+          <span class="rewind__label">Rewind<br />to top</span>
+        </button>
+      </div>
+
+      <div class="footer__cols">
+        <nav aria-label="Footer">
+          <p class="label">Navigate</p>
+          <ul>
+            <li><a href="#top">Showreel</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#reels">Reels</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="label">Social</p>
+          <ul data-footer-socials></ul>
+        </div>
+        <div>
+          <p class="label">Contact</p>
+          <ul data-footer-contact></ul>
+        </div>
+        <div>
+          <p class="label">Local time</p>
+          <p class="footer__clock"><span data-clock>--:--:--</span></p>
+          <p class="footer__loc" data-location></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__mark" aria-hidden="true"><span data-footer-mark>VISIBLE</span></div>
+
+    <div class="wrap footer__bottom">
+      <p>© <span data-year></span> <span data-site-name>Visible Studio</span>. All rights reserved.</p>
+      <p class="label">Fin. — 00:00:00:00</p>
+    </div>
+  </footer>
+
+  <!-- ============================== PROJECT DETAIL ============================== -->
+  <div class="project" role="dialog" aria-modal="true" aria-labelledby="project-title" hidden data-project>
+    <div class="project__backdrop" data-project-close></div>
+    <div class="project__panel" data-lenis-prevent data-project-panel></div>
+  </div>
+
+  <!-- Libraries (pinned versions, self-hosted in /vendor) -->
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+  <script src="vendor/gsap/SplitText.min.js"></script>
+  <script src="vendor/gsap/Flip.min.js"></script>
+  <script src="vendor/lenis/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* ==========================================================================
+   WORK — filters + a clean grid of 16:9 video cards.
+   Every card always shows a "Watch" button and its formats, so it is obvious
+   these are videos (not photos) without hovering.
+   ========================================================================== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.work-grid {
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 2.5vw, 2.5rem);
+}
+@media (min-width: 760px) { .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.work-grid.is-empty::after {
+  content: 'No videos in this category yet.';
+  grid-column: 1 / -1;
+  color: var(--paper-mute);
+}
+
+/* ---------- Card ---------- */
+.card { --c: var(--violet); position: relative; }
+.card[hidden] { display: none; }
+.card__link { display: grid; gap: 1.1rem; }
+.card__link:focus-visible { outline: none; }
+.card__link:focus-visible .card__media { outline: 2px solid var(--lime); outline-offset: 4px; }
+
+.card__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--char);
+  box-shadow: 0 0 0 1px var(--line);
+  isolation: isolate;
+  transition: box-shadow 0.4s;
+}
+.card__media img, .card__media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out), opacity 0.5s;
+}
+.card__media video { opacity: 0; }
+/* Vertical-only projects: the full 9:16 frame sits in the middle of the card */
+.card__media--tall img:not(.card__bg), .card__media--tall video { object-fit: contain; }
+.card__media--tall .card__bg { object-fit: cover; }
+.card__media video.is-playing { opacity: 1; }
+.card__media::after {
+  /* soft shade so the labels stay readable on any frame */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(16, 16, 20, 0.4), transparent 28%, transparent 58%, rgba(16, 16, 20, 0.6));
+  pointer-events: none;
+}
+
+/* The big, always-visible "Watch" button */
+.card__watch {
+  position: absolute;
+  left: clamp(0.75rem, 1.5vw, 1.1rem);
+  bottom: clamp(0.75rem, 1.5vw, 1.1rem);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1.02rem;
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s var(--ease-out);
+}
+.card__play {
+  display: grid;
+  place-items: center;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--lime);
+}
+.card__play .icon { fill: currentColor; margin-left: 3px; }
+
+.card__formats {
+  position: absolute;
+  left: clamp(0.75rem, 1.5vw, 1.1rem);
+  top: clamp(0.75rem, 1.5vw, 1.1rem);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.card__formats span {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(16, 16, 20, 0.8);
+  font-family: var(--f-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+.card .badge-demo { right: clamp(0.75rem, 1.5vw, 1.1rem); bottom: clamp(1.1rem, 2vw, 1.5rem); }
+
+.card__meta { display: grid; gap: 0.35rem; }
+.card__cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper-mute);
+}
+.card__cat::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.card__title {
+  font-family: var(--f-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  font-stretch: 85%;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.card__desc { max-width: 52ch; color: var(--paper-dim); font-size: 0.98rem; }
+
+@media (hover: hover) {
+  .card__link:hover .card__media { box-shadow: 0 0 0 2px var(--c); }
+  .card__link:hover .card__media img, .card__link:hover .card__media video { transform: scale(1.04); }
+  .card__link:hover .card__watch { transform: scale(1.06); }
+}
+
+/* ---------- Mobile: filters scroll sideways in one row ---------- */
+@media (max-width: 759px) {
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: calc(-1 * var(--gutter));
+    padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { flex: none; }
+}
